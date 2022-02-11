@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIG MAGAZINE</title>
+    <link rel="shortcut icon" href="imagenes/favicon.jpg" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="contacto">
+    <!-----------Barra de navegación ------------->
+    <header class="header">
+        <a href="index.html">
+            <img height="50" width="50" src="imagenes/logoDigFondoNegro.png" alt="logo" />
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-----------Fin Barra de navegación ------------->
+    <!---------------Formulario de contacto----------------------->
+    <h1>Formulario de contacto</h1>
+    <form action="#" method="post" enctype="text/plain">
+        <fieldset class="fieldset">
+            <legend>Información personal</legend>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <br />
+                <input type="text" placeholder="Nombre" required />
+            </div>
+            <br />
+            <div>
+                <label for="apellido">Apellido:</label>
+                <br />
+                <input type="text" placeholder="Apellido" required />
+            </div>
+            <br />
+            <div>
+                <label for="email">Email:</label>
+                <br />
+                <input type="email" placeholder="email" required />
+            </div>
+            <br />
+            <label for="comentarios">Comentarios</label>
+            <br />
+            <textarea name="comentarios" id="" cols="30" rows="10" placeholder="Escribe tu comentario"></textarea>
+            <br />
+            <input type="submit" value="Enviar" />
+        </fieldset>
+    </form>
+    <!---------------------Fin Formulario de contacto----------------->
+    <!-----------------------Footer----------------------------------->
+    <hr />
+    <footer class="footer">
+        <a class="logo" href="index.html">
+            <img height="100" width="100" src="imagenes/logoDigFondoNegro.png" alt="logo"/>
+        </a>
+        <h3>DIG MAGAZINE trayendo las últimas noticas del BMX desde 1990.</h3>
+        <hr>
+        <div class="redes">
+            <ul>
+            <li>
+                <a href="https://www.youtube.com/user/DIGBMXOfficial" target="_blank"><img src="https://icongr.am/fontawesome/youtube.svg?size=30&color=ffffff" alt="youtube"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/digbmx/" target="_blank"><img src="https://icongr.am/fontawesome/instagram.svg?size=30&color=ffffff" alt="instagram"></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/DIGBMX" target="_blank"><img src="https://icongr.am/fontawesome/facebook.svg?size=30&color=ffffff" alt="facebook"></a>
+            </li>
+            <li>
+                <a href="contacto.html"><img src="https://icongr.am/fontawesome/envelope-o.svg?size=30&color=ffffff" alt="contacto"></a>
+            </li>
+        </ul>
+        </div>
+    </footer>
+    <!-----------------------Fin footer------------------------------->
+</body>
+
+</html>
