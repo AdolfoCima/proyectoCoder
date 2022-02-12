@@ -8,6 +8,7 @@
     <title>DIG MAGAZINE</title>
     <link rel="shortcut icon" href="imagenes/favicon.jpg" />
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body class="container">
@@ -53,7 +54,7 @@
                 dolor sit amet consectetur adipisicing elit. Minus culpa magni nisi, laudantium omnis aspernatur sunt
                 facilis maxime deserunt dolorum deleniti libero blanditiis nostrum sint qui quos nesciunt tenetur sit?
             </p>
-            <div class="boton">
+            <div data-aos="zoom-out" data-aos-duration="500" class="boton">
                 <a href="sobrenosotros.html">Saber más</a>
             </div>
         </article>
@@ -109,7 +110,7 @@
         <br />
     </section>
     <div class="botonG1">
-        <a href="galeria.html">Ver Todo</a>
+        <a data-aos="zoom-out" data-aos-duration="500" href="galeria.html">Ver Todo</a>
     </div>
 
     <hr>
@@ -117,8 +118,8 @@
     <!--------------------------Noticias----------------------------->
     <h2>Noticias</h2>
     <section id="noticias" class="noticias">
-        <div class="imgN1"></div>
-        <article class="noticia1">
+        <div data-aos="fade-right" class="imgN1"></div>
+        <article data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="noticia1">
             <h3>Título noticia 1</h3>
             <br>
             <p>
@@ -128,7 +129,7 @@
                 adipisicing elit. Impedit iste harum labore explicabo? Dolor consequuntur quis voluptas. Veritatis
             </p>
         </article>
-        <article class="noticia2">
+        <article data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="noticia2">
             <h3>Título noticia 2</h3>
             <br>
             <p>
@@ -138,10 +139,10 @@
                 consectetur adipisicing elit. Iure perspiciatis veniam.
             </p>
         </article>
-        <div class="imgN2"></div>
+        <div data-aos="fade-left" class="imgN2"></div>
     </section>
     <div class="boton3">
-        <a href="noticias.html">Ver Todo</a>
+        <a data-aos="zoom-out" data-aos-duration="500" href="noticias.html">Ver Todo</a>
     </div>
     <!-----------------------Fin Noticias----------------------------->
     <!-----------------------Footer----------------------------------->
@@ -174,6 +175,10 @@
         </div>
     </footer>
     <!-----------------------Fin footer------------------------------->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

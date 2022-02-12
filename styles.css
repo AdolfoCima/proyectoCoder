@@ -423,6 +423,7 @@ article {
 article p {
   padding-left: 10px;
 }
+
 /***********************fin estilos noticias*********************/
 /****************Estilos Formulario de Contacto******************/
 form {
@@ -485,7 +486,7 @@ form {
     justify-content: center;
     align-items: center;
   }
-  
+
   .video1,
   .video2,
   .video3,

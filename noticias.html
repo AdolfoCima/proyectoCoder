@@ -8,6 +8,7 @@
     <title>DIG MAGAZINE</title>
     <link rel="shortcut icon" href="imagenes/favicon.jpg" />
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -32,8 +33,8 @@
         <h1>Noticias</h1>
     </div>
     <div class="noticias2">
-        <div class="i1"></div>
-        <article class="n1">
+        <div data-aos="flip-right" class="i1"></div>
+        <article data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="n1">
             <h3>Noticia 1</h3>
             <br />
             <p>
@@ -43,7 +44,7 @@
                 non!
             </p>
         </article>
-        <article class="n2">
+        <article data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="n2">
             <h3>Noticia 2</h3>
             <br />
             <p>
@@ -53,9 +54,9 @@
                 impedit nulla at reprehenderit.
             </p>
         </article>
-        <div class="i2"></div>
-        <div class="i3"></div>
-        <article class="n3">
+        <div data-aos="flip-left" class="i2"></div>
+        <div data-aos="flip-right" class="i3"></div>
+        <article data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="n3">
             <h3>Noticia 3</h3>
             <br />
             <p>
@@ -65,7 +66,7 @@
                 impedit nulla at reprehenderit.
             </p>
         </article>
-        <article class="n4">
+        <article data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="n4">
             <h3>Noticia 4</h3>
             <br />
             <p>
@@ -75,7 +76,7 @@
                 impedit nulla at reprehenderit.
             </p>
         </article>
-        <div class="i4"></div>
+        <div data-aos="flip-left" class="i4"></div>
     </div>
     <!-----------------------Footer----------------------------------->
     <hr />
@@ -107,6 +108,10 @@
         </div>
     </footer>
     <!-----------------------Fin footer------------------------------->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
