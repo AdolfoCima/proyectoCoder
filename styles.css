@@ -2,7 +2,7 @@
 
 * {
   margin: 0 ;
-  padding: 0;
+  padding: 0 ;
   font-family: "Montserrat", sans-serif;
 }
 html {
@@ -499,7 +499,9 @@ form {
   padding: 20px;
 }
 /*fin estilos footer*/
+
 /************MEDIA QUERIES ***********/
+
 @media only screen and (max-width: 478px) {
   .hero h1 {
     font-size: 35px;
