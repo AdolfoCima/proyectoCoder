@@ -1,19 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200&display=swap");
 
 * {
-  margin: 0;
+  margin: 0 ;
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
 html {
   scroll-behavior: smooth;
 }
+body{
+  padding: 0 !important;
+}
+
 
 /******************************GRIDS INDEX***************/
+
 .container1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 50px 300px 300px 380px 300px 150px;
+  grid-template-rows: 50px 300px 300px 300px 300px 150px;
   gap: 10px 10px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -27,14 +32,16 @@ html {
   height: 100%;
 }
 
-.header {
+.header1 {
   grid-area: header;
-  width: 100%;
+  width: 100% ;
   background-color: black;
   position: sticky;
   top: 0px;
   display: flex;
+  flex-direction: row;
   box-shadow: 0 0 5px white;
+  padding: 0px !important;
 }
 
 .hero {
@@ -42,7 +49,7 @@ html {
   height: 100vh;
   width: 100%;
   background-image: url(https://images.unsplash.com/photo-1508507282632-7ae0a31b8f62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
-  background-size: cover;
+  background-size: cover !important;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
@@ -59,13 +66,14 @@ html {
   display: grid;
   grid-template-columns: 0.6fr 1.4fr;
   grid-template-rows: 300px;
-  gap: 5px 5px;
+  gap: 0px 0px ;
   grid-template-areas: "img article";
 }
 .img {
   grid-area: img;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .boton {
   grid-area: boton;
@@ -84,7 +92,7 @@ html {
 .boton a {
   background-color: black;
   box-shadow: 0 0 5px white;
-  padding: 10px;
+  padding: 10px !important;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -97,6 +105,11 @@ html {
   color: lightblue;
 }
 
+.galeria {
+  grid-area: galeria;
+}
+
+/*
 .galeria {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -135,7 +148,7 @@ html {
 .footer {
   grid-area: footer;
 }
-
+*/
 /*****************************FIN GRIDS INDEX*******************/
 
 /******************Estilos de Barra de Navegación**************/
@@ -153,11 +166,12 @@ nav ul li {
 }
 nav a {
   text-decoration: none;
-  color: white;
+  color: white !important;
   font-size: 15px;
 }
 nav a:hover {
-  color: lightblue;
+  color: rgb(201, 195, 195) !important;
+  
 }
 /************FIN estilos de Barra de Navegación****************/
 
@@ -168,6 +182,8 @@ h2 {
   text-transform: uppercase;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin: 0%;
+  box-shadow: 0 0 5px white;
 }
 a {
   text-decoration: none;
@@ -192,8 +208,8 @@ a {
   display: flex;
   justify-content: center;
   color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
 }
 .nuestrahistoria {
   display: grid;
@@ -231,6 +247,7 @@ a {
   display: flex;
   background-color: black;
   flex-direction: column;
+  box-shadow: 0 0 5px white; 
 }
 .nuestrahistoria h1 {
   text-align: center;
@@ -248,13 +265,18 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.tituloGaleria h2{
+  box-shadow: none;
 }
 .botonG1 {
   display: flex;
   background-color: black;
   justify-content: center;
-  padding: 10px;
+  padding: 10px !important;
 }
 .botonG1 a {
   display: flex;
@@ -264,7 +286,7 @@ a {
   color: white;
   background-color: black;
   box-shadow: 0 0 5px white;
-  padding: 10px;
+  padding: 10px !important;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -282,6 +304,7 @@ a {
   justify-content: center;
   flex-direction: row;
 }
+
 
 /**************************fin estilos galeria**************************/
 /****************************Estilos Noticias****************************/
@@ -391,7 +414,7 @@ a {
   background-color: black;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 10px !important;
 }
 .boton3 a {
   display: flex;
@@ -401,7 +424,7 @@ a {
   color: white;
   background-color: black;
   box-shadow: 0 0 5px white;
-  padding: 10px;
+  padding: 10px !important;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -453,6 +476,7 @@ form {
   color: lightgray;
   padding-top: 1rem;
   text-align: center;
+  box-shadow: 0 0 5px white;
 }
 .redes {
   display: flex;
