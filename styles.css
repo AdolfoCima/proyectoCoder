@@ -449,22 +449,12 @@ article p {
 
 /***********************fin estilos noticias*********************/
 /****************Estilos Formulario de Contacto******************/
-form {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+
 .contacto {
-  background-color: black;
-  color: white;
+  background-color: rgb(26, 19, 19);
+  color: rgb(255, 255, 255) ;
 }
-.fieldset {
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
+
 /*Fin Estilos Formulario de Contacto*/
 /*footer*/
 .footer {
