@@ -1,0 +1,141 @@
+/****************************Estilos Noticias****************************/
+.noticias {
+    background-color: rgb(119, 7, 7);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 400px;
+    gap: 0px 0px;
+    grid-template-areas:
+      "imgN1 noticia1"
+      "noticia2 imgN2";
+  }
+  .imgN1 {
+    grid-area: imgN1;
+    background-image: url(/imagenes/800.jpg);
+  }
+  .noticia1 {
+    grid-area: noticia1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .noticia2 {
+    grid-area: noticia2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgN2 {
+    grid-area: imgN2;
+    background-image: url(/imagenes/best-bmx-under-350-680x454.jpg);
+  }
+  
+  .noticias2 {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 400px 400px 400px;
+    gap: 0px 0px;
+    grid-template-areas:
+      "i1 n1"
+      "n2 i2"
+      "i3 n3"
+      "n4 i4";
+  }
+  .i1 {
+    grid-area: i1;
+    background-image: url(https://images.unsplash.com/photo-1610493812834-c48ef72cfb1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80);
+    background-position: center;
+  }
+  .n1 {
+    grid-area: n1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .i2 {
+    grid-area: i2;
+    background-image: url(https://images.unsplash.com/photo-1559895612-6adea30b0522?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=933&q=80);
+    background-position: center;
+  }
+  .n2 {
+    grid-area: n2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .i3 {
+    grid-area: i3;
+    background-image: url(https://images.unsplash.com/photo-1503221138738-76cbfe9f54ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-position: center;
+  }
+  .n3 {
+    grid-area: n3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .i4 {
+    grid-area: i4;
+    background-image: url(https://images.unsplash.com/photo-1505731650330-38d7575f093e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-position: center;
+  }
+  .n4 {
+    grid-area: n4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tituloN2 {
+    background-color: black;
+    color: white;
+    padding: 10px;
+  }
+  
+  .boton3 {
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      a {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          background-color: black;
+          box-shadow: 0 0 5px white;
+          padding: 10px;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+          &:hover {
+              color: lightblue;
+          }
+      }
+  }
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  article {
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      p {
+          padding-left: 10px;
+      }
+  }
+  
+  /***********************fin estilos noticias*********************/

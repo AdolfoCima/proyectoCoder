@@ -1,0 +1,33 @@
+/*******************footer*********************/
+.footer {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: lightgray;
+    padding-top: 1rem;
+    text-align: center;
+    box-shadow: 0 0 5px white;
+  }
+  .redes {
+      display: flex;
+      width: 75%;
+      color: lightgray;
+      ul {
+          display: flex;
+          list-style: none;
+          justify-content: center;
+          flex-direction: row;
+          align-items: center;
+          width: 100%;
+          padding: 20px;
+          li {
+              padding: 20px;
+          }
+      }
+  }
+  .logo {
+    padding: 20px;
+  }
+  /*fin estilos footer*/
