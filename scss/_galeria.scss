@@ -1,48 +1,52 @@
+/**************************INICIO MIXIN******************************/
+@mixin flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/**************************FIN MIXIN******************************/
+
 /**************************Estilos Galeria******************************/
 .galeria {
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.tituloGaleria {
+  h2 {
+    box-shadow: none;
+  }
+  @include flex-row-center;
+}
+.botonG1 {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  padding: 10px;
+  a {
+    @include flex-row-center;
     align-items: center;
-    justify-content: space-around;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .tituloGaleria {
-      h2 {
-          box-shadow: none;
-      }
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-  }
-  .botonG1 {
-      display: flex;
-      background-color: black;
-      justify-content: center;
-      padding: 10px;
-      a {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          color: white;
-          background-color: black;
-          box-shadow: 0 0 5px white;
-          padding: 10px;
-          -webkit-border-radius: 5px;
-          -moz-border-radius: 5px;
-          -ms-border-radius: 5px;
-          -o-border-radius: 5px;
-          border-radius: 5px;
-          &:hover {
-              color: lightskyblue;
-          }
-      }
-  }
-  .galeria2 {
+    color: white;
     background-color: black;
+    box-shadow: 0 0 5px white;
+    padding: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    &:hover {
+      color: lightskyblue;
+    }
   }
-  
-  /**************************fin estilos galeria**************************/
+}
+.galeria2 {
+  background-color: black;
+}
+
+/**************************fin estilos galeria**************************/
