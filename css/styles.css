@@ -372,6 +372,7 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -379,6 +380,26 @@ a {
   font-size: 40px;
   color: white;
   text-shadow: 0 0 20px black;
+}
+
+.relleno {
+  height: 90vh;
+  width: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/imagenes/UN-SP14.jpg);
+}
+
+.relleno2 {
+  height: 90vh;
+  width: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://cdn.pixabay.com/photo/2019/06/20/17/00/cycling-4287590_960_720.jpg);
 }
 
 .boton {
