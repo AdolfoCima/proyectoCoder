@@ -75,8 +75,7 @@
 }
 
 /*****************fin estilos sobre nosotros******************/
-/**************************INICIO MIXIN******************************/
-/**************************FIN MIXIN******************************/
+
 /**************************Estilos Galeria******************************/
 .galeria {
   background-color: black;
@@ -128,8 +127,7 @@
 }
 
 /**************************fin estilos galeria**************************/
-/****************************INICIO MAP****************************/
-/****************************FIN MAP****************************/
+
 /****************************Estilos Noticias****************************/
 .noticias {
   background-color: #770707;
@@ -372,7 +370,6 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /*background-attachment: fixed;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
